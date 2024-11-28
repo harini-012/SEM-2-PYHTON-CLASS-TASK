@@ -1,4 +1,5 @@
- class Employee:
+#1
+class Employee:
     def getEmployeeInfo(self):
         self.id=input("Enter the id:")
         self.name=input("enter the name")
@@ -17,24 +18,31 @@ p=Perks()
 p.getDetails()
 p.displayInfo()
 
+#2
+class Inventory:
+    def __init__(self,prodID,prodName,prodCount):
+        self.prodID=prodID
+        self.prodName=prodName
+        self.prodCount=prodCount
+    def display(self):
+        print("Product ID:", self.prodID)
+        print("Product Name:", self.prodName)
+        print("Prodyct Count", self.prodCount)
+s=Show("E24AI012","Printer",100)
+s.display()
 
 
 
-class Employee:
-    def getEmployeeInfo(self):
-        self.id=input("Enter id")
-        self.name=input('Enter the name')
-        self.salary=int(input('Enter the salary'))
-    def displayEmployeeInf(self):
-        print(f"ID={self.id}\n Name={self.name} \nSalary={self.salary}")
-    def getSalary(self):
-        return self.salary
-class Perks(Employee):
-    def calculatesalary(Self):
-        self.getEmployeeInfo()
-        sal=self.getSalry()
-        self.hra=sal*/
-        self.total=self.hra+self.da
-    def displayPerks(self):
-        self.displayEmpl
-        
+#3
+class Inventory:
+    def __init__(self,prodID,prodName,prodCount):
+        self.prodID=prodID
+        self.prodName=prodName
+        self.prodCount=prodCount
+class Show(Inventory):
+    def display(self):
+        print("Product ID:", self.prodID)
+        print("Product Name:", self.prodName)
+        print("Prodyct Count", self.prodCount)
+s=Show("E24AI012","Printer",100)
+s.display()
